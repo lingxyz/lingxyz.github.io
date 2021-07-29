@@ -11,9 +11,9 @@ jobs:
       uses: actions/checkout@master
 
     - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.access_token }}
-        BRANCH: gh-pages
-        FOLDER: dist
-        BUILD_SCRIPT: npm install && npm run build && echo 'zhangling.me' > dist/CNAME
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        ssh-key: ${{ secrets.access_token }}
+        branch: gh-pages
+        folder: dist
+        build_script: npm install && npm run build && echo 'zhangling.me' > dist/CNAME
