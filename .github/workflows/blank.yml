@@ -15,7 +15,7 @@ jobs:
       with:
         ssh-key: ${{ secrets.access_token }}
         branch: gh-pages
-        folder: dist
+        folder: ./dist
         run: |
             npm install
             npm run build
