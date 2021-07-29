@@ -16,4 +16,7 @@ jobs:
         ssh-key: ${{ secrets.access_token }}
         branch: gh-pages
         folder: dist
-        build_script: npm install && npm run build && echo 'zhangling.me' > dist/CNAME
+        run: |
+            npm install
+            npm run build
+            echo 'zhangling.me' > dist/CNAME
