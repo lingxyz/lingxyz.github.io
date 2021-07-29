@@ -17,26 +17,3 @@ jobs:
         BRANCH: gh-pages
         FOLDER: dist
         BUILD_SCRIPT: npm install && npm run build && echo 'zhangling.me' > dist/CNAME
-
-# name: website deploy
-
-# on: [push]
-
-# jobs:
-#   build:
-
-#     runs-on: ubuntu-latest
-
-#     steps:
-#     - uses: actions/checkout@v1
-#     - name: install npm package
-#       run: npm install
-#     - name: build project
-#       run: npm run build
-#     - run: echo 'zhanglingx.me' > dist/CNAME
-#     - name: Deploy
-#       uses: peaceiris/actions-gh-pages@v2.5.0
-#       env:
-#         ACTIONS_DEPLOY_KEY: ${{secrets.access_token}}
-#         PUBLISH_BRANCH: gh-pages
-#         PUBLISH_DIR: dist
