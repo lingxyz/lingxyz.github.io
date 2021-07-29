@@ -7,16 +7,19 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
+    - name: Checkout 🛎️
       uses: actions/checkout@master
+      
+    - name: Install and Build 🔧 
+      run: |
+          npm install
+          npm run build
+          echo 'zhangling.me' > dist/CNAME
 
-    - name: Build and Deploy
+    - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
         ssh-key: ${{ secrets.access_token }}
         branch: gh-pages
-        folder: ./dist
-        run: |
-            npm install
-            npm run build
-            echo 'zhangling.me' > dist/CNAME
+        folder: dist
+        
