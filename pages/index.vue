@@ -18,7 +18,7 @@
 		//- a(href="http://github.com/lingzZ")
 		//- 	i.iconfont.icon-qq
 
-	p.about.animated.fadeInDown(style="animation-delay: .8s;") Ling Z,&nbsp;&nbsp;a JavaScript Designer
+	p.about.animated.fadeInDown(style="animation-delay: .8s;") {{indexDB.info.description}}
 
 	.menu
 		a.animated(
