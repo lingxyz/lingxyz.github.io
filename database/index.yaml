@@ -15,8 +15,8 @@ menus:
   link: /aboutme
 # 推荐列表
 recommends:
-- title: '《前端开发规范》'
-  link: 'https://feguide.zhangling.me/'
+- title: '《开发规范》'
+  link: 'https://zhangling.me/standard/'
   background: '#fbf94e'
 - title: 《技术问答题》
   link: https://ask.zhangling.me/
