@@ -1,1 +1,6 @@
-Hello, Vurepress2.0
+---
+layout: HomeLayout
+sidebar: false
+lastUpdated: false
+contributors: false
+---
