@@ -13,7 +13,7 @@ module.exports = {
       { rel: 'stylesheet', href: '//at.alicdn.com/t/font_987629_b1cqvuf9roo.css' }
     ]
   ],
-
+  // 默认theme配置：https://github.com/vuepress/vuepress-next/tree/main/packages/%40vuepress/theme-default
   themeConfig: {
     // logo: 'https://vuejs.org/images/logo.png',
     navbar: [ // NavbarItem
