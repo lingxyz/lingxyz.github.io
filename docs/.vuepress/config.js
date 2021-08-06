@@ -23,24 +23,36 @@ module.exports = {
       },
       {
         text: '文集',
-        link: '/books/',
+        children: [
+          {text: '产品', link: ''},
+          {text: '技术', link: ''},
+          {text: '管理', link: ''},
+          {text: '小说', link: ''},
+        ]
       },
       {
         text: '精读',
-        link: '/read/',
+        children: [
+          {text: '精读笔记-书文', link: 'https://zhangling.me/read/'},
+          {text: '精读笔记-源码', link: ''},
+        ]
       },
       {
         text: '架构',
-        link: '/xxx',
+        children: [
+          {text: '产品架构体系', link: ''},
+          {text: '前端架构体系', link: ''},
+          {text: '后端架构体系', link: ''},
+          {text: '数据架构体系', link: ''},
+        ]
       },
       {
-        text: '开源项目',
-        link: '/xxx',
-      },
-      {
-        text: '商业项目',
-        link: '/xxx',
-      },
+        text: '项目',
+        children: [
+          {text: '开源项目', link: ''},
+          {text: '商业项目', link: ''},
+        ]
+      }
     ]
   },
 }
