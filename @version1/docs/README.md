@@ -9,7 +9,7 @@ info:
 # 菜单列表
 menus:
 - title: Blog
-  link: https://blog.zhangling.me/
+  link: https://blog.zhangling.site/
 - title: 'Tutorials'
   link: https://github.com/zhanglingx?tab=repositories&q=tutorial
 
@@ -24,10 +24,10 @@ menus:
 # 推荐列表
 recommends:
 - title: '《开发规范》'
-  link: 'https://zhangling.me/standard/'
+  link: 'https://zhangling.site/standard/'
   background: '#fbf94e'
 - title: 《技术问答题》
-  link: https://ask.zhangling.me/
+  link: https://ask.zhangling.site/
   background: '#1672b7'
 - title: 《Cook脚手架》
   link: https://github.com/CookX/cook-cli

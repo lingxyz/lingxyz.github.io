@@ -2,7 +2,7 @@
   "name": "vuepress-starter",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Ling Z <zhangling.me@foxmail.com>",
+  "author": "Ling Z <zhangling.site@foxmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev docs",

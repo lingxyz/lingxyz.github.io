@@ -1,0 +1,20 @@
+# 关于我
+experience:
+- time: 2019年4月
+  text: 就读人民大学，计算机硕士学位班
+  icon: el-icon-more
+  type: primary
+  size: large
+- time: 2017年7月
+  text: 加入欣和企业，担任上海分公司研发技术负责人
+  size: large
+  type: success
+- time: 2014年10月 ~ 2017年7月
+  text: 服务于平安好房、好屋中国等企业，从工程师到 Team Leader
+  text2: 技术积累阶段
+  type: danger
+- time: 2014年6月
+  text: 本科毕业，获工学学士学位
+  type: info
+- time: 2014年2月
+  text: 自学前端

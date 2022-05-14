@@ -1,0 +1,27 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "我的个人网站",
+  "author": "Zero",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt generate",
+    "deploy": "./deploy.sh"
+  },
+  "dependencies": {
+    "element-ui": "^2.13.0",
+    "js-yaml": "^3.13.1",
+    "json-loader": "^0.5.7",
+    "moment": "^2.24.0",
+    "nuxt": "^2.0.0",
+    "yaml-frontmatter-loader": "^0.1.0"
+  },
+  "devDependencies": {
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "@gauseen/nuxt-proxy": "^1.0.1"
+  }
+}

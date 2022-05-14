@@ -33,7 +33,7 @@ module.exports = {
       {
         text: '精读',
         children: [
-          {text: '精读笔记-书文', link: 'https://zhangling.me/read/'},
+          {text: '精读笔记-书文', link: 'https://zhangling.site/read/'},
           {text: '精读笔记-源码', link: ''},
         ]
       },
