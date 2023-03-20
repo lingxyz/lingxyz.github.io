@@ -3,36 +3,39 @@
  */
 <template lang="pug">
 .container
-  a.photo.animated.zoomIn(href="/aboutme" title="About me")
+  .main
+    a.photo.animated.zoomIn(href="/aboutme" title="About me")
 
-  .links.animated.fadeInDown(style="animation-delay: .4s;")
-    a(href="http://github.com/zhanglingme")
-      i.iconfont.icon-github
-    a(href="javascript:;")
-      i.iconfont.icon-wechat
-      img(src="../assets/qr_wechat.jpg" alt="")
-    a(href="http://weibo.com/5565541266")
-      i.iconfont.icon-weibo
-    a(href="http://twitter.com/lingzZ")
-      i.iconfont.icon-twitter
-    //- a(href="http://github.com/lingzZ")
-    //- 	i.iconfont.icon-qq
+    .links.animated.fadeInDown(style="animation-delay: .4s;")
+      a(href="http://github.com/lingxyz")
+        i.iconfont.icon-github
+      a(href="javascript:;")
+        i.iconfont.icon-wechat
+        img(src="../assets/qr_wechat.jpg" alt="")
+      a(href="http://weibo.com/5565541266")
+        i.iconfont.icon-weibo
+      a(href="http://twitter.com/lingzZ")
+        i.iconfont.icon-twitter
+      a(href="mailto:zhangling.me@foxmail.com")
+          i.iconfont.icon-mail
+      //- a(href="http://github.com/lingzZ")
+      //- 	i.iconfont.icon-qq
 
-  p.about.animated.fadeInDown(style="animation-delay: .8s;") {{frontmatter.info.description}}
+    p.about.animated.fadeInDown(style="animation-delay: .8s;") {{frontmatter.info?.description}}
 
-  .menu
-    a.animated(
-      v-for="(item, index) in frontmatter.menus"
-      :href="item.link"
-      :class="menusAnimateClass"
-      :style="'animation-delay: ' + (1 + 0.2 * index) + 's;'") {{item.title}}
+    .menu
+      a.animated(
+        v-for="(item, index) in frontmatter.menus"
+        :href="item.link"
+        :class="menusAnimateClass"
+        :style="'animation-delay: ' + (1 + 0.2 * index) + 's;'") {{item.title}}
 
-  //- recommend
-  .recommend.animated.fadeInLeft(style="animation-delay: 2s;")
-    a(
-      v-for="(item, index) in frontmatter.recommends"
-      :href="item.link"
-      :style="'background: ' + item.background") {{item.title}}
+    //- recommend
+    .recommend.animated.fadeInLeft(style="animation-delay: 2s;")
+      a(
+        v-for="(item, index) in frontmatter.recommends"
+        :href="item.link"
+        :style="'background: ' + item.background") {{item.title}}
 </template>
 
 <script>
@@ -71,6 +74,8 @@ export default {
 <style lang="stylus" scoped>
 // container
 .container
+  width 100%
+.main
   line-height 1.5
   color #000
   font-size 1rem
@@ -79,7 +84,8 @@ export default {
   position absolute
   width 100%
   top 40%
-  transform translateY(-40%)
+  left 50%
+  transform translate(-50%, -40%)
 
 // photo
 a

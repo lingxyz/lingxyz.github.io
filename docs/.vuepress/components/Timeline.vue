@@ -4,7 +4,7 @@
 <template lang="pug">
 el-timeline
 	el-timeline-item(
-		v-for="(item, index) in list"
+		v-for="(item, index) in frontmatter.experience"
 		:key="index"
 		:icon="item.icon"
 		:type="item.type"
@@ -17,11 +17,21 @@ el-timeline
 </template>
 
 <script>
-export default {
-    name: 'Timeline',
+import { usePageFrontmatter } from '@vuepress/client'
 
-	props: {
-		list: Array
-	},
+export default {
+  name: 'Timeline',
+  setup() {
+    // 读取md中yml配置
+    const frontmatter = usePageFrontmatter()
+    return {
+      frontmatter
+    }
+  }
 }
 </script>
+
+<style lang="stylus" scoped>
+.el-timeline
+  margin 100px
+</style>

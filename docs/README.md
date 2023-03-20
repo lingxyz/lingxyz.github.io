@@ -1,5 +1,5 @@
 ---
-layout: HomeLayout
+home: true
 sidebar: false
 lastUpdated: false
 contributors: false
@@ -9,25 +9,25 @@ info:
 # 菜单列表
 menus:
 - title: Blog
-  link: https://blog.zhangling.me/
+  link: https://zhangling.site/blog/
 - title: 'Tutorials'
-  link: https://github.com/zhanglingx?tab=repositories&q=tutorial
+  link: https://github.com/lingxyz?tab=repositories&q=tutorial
 
 # - title: Books
-  # link: https://github.com/zhanglingx?tab=repositories&q=book
+  # link: https://github.com/lingxyz?tab=repositories&q=book
 - title: Projects
-  link: https://github.com/zhanglingx?tab=repositories&q=project
+  link: https://github.com/lingxyz?tab=repositories&q=project
 - title: Code
-  link: https://github.com/zhanglingx
+  link: https://github.com/lingxyz
 - title: About me
-  link: /aboutme
+  # link: /aboutme
 # 推荐列表
 recommends:
 - title: '《开发规范》'
-  link: 'https://zhangling.me/standard/'
+  link: 'https://zhangling.site/standard/'
   background: '#fbf94e'
 - title: 《技术问答题》
-  link: https://ask.zhangling.me/
+  link: https://ask.zhangling.site/
   background: '#1672b7'
 - title: 《Cook脚手架》
   link: https://github.com/CookX/cook-cli

@@ -12,9 +12,10 @@ jobs:
 
     - name: Install and Build 🔧
       run: |
+          rm -rf package-lock.json
           npm install
           npm run build
-          echo 'zhangling.me' > docs/.vuepress/dist/CNAME
+          echo 'zhangling.site' > docs/.vuepress/dist/CNAME
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.4
