@@ -6,16 +6,15 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    container: node:16.19.1
     steps:
     - name: Checkout 🛎️
-      uses: actions/checkout@master
-
+      uses: actions/checkout@v3
     - name: Install and Build 🔧
       run: |
-          rm -rf package-lock.json
-          npm install
-          npm run build
-          echo 'zhangling.site' > docs/.vuepress/dist/CNAME
+        npm install
+        npm run build
+        echo 'zhangling.site' > docs/.vuepress/dist/CNAME
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.4
