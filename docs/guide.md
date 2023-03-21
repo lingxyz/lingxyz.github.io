@@ -17,6 +17,17 @@ import { Delete, Edit, Search, Share, Upload, Check, SuccessFilled, StarFilled, 
 - 等等
 ```
 
+## 博客
+<el-button type="success" text bg style="margin: 10px">
+  <el-link type="success" href="https://v2.vuepress.vuejs.org/zh/" target="_blank">VuePress 2.x 编译成静态文档</el-link>
+</el-button>
+<el-button type="primary" text bg style="margin: 10px">
+  <el-link type="primary" href="https://docsify.js.org/#/zh-cn/" target="_blank">Docsify 运行时生成文档</el-link>
+</el-button>
+<el-button type="danger" text bg style="margin: 10px">
+  <el-link type="danger" href="https://www.recoluan.com/" target="_blank">午后南杂的博客</el-link>
+</el-button>
+
 ## 前端
 ### 框架
 <el-button type="success" text bg :icon="SuccessFilled" style="margin: 10px">

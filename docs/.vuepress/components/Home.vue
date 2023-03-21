@@ -74,13 +74,19 @@ export default {
 <style lang="stylus" scoped>
 // container
 .container
+  position fixed
+  left 0
+  top 0
   width 100%
-.main
+  height 100vh
+  font-family "Source Sans Pro",Futura,"Helvetica Neue",Helvetica,"Lantinghei SC","Kaiti SC","Hiragino Sans GB","Microsoft YaHei",sans-serif
   line-height 1.5
   color #000
   font-size 1rem
-  font-family "Source Sans Pro",Futura,"Helvetica Neue",Helvetica,"Lantinghei SC","Kaiti SC","Hiragino Sans GB","Microsoft YaHei",sans-serif
   text-align center
+  background url(/images/bg.svg) center center / cover no-repeat
+
+.main
   position absolute
   width 100%
   top 40%
