@@ -26,7 +26,8 @@ Welcome to my [personal website](https://zhangling.site). Read more about me:
       ├── submodulen # 文集n
 ```
 - [X] 【部署】提交代码后默认触发`github actions`自动部署。或执行 `npm run deploy` 一键部署。
+- [X] 【编辑】加速及权限控制。点击编辑此页，跳转到Gitee私有仓库进行编辑。配置Gitee仓库自动镜像到Github。Github仓库手动镜像到Gitee。
+- [ ] 在线编辑器。可视化编辑和提交。更方便。
 - [ ] 集成vuepress-theme-reco主题
 - [ ] git submodule集成其它文档。并在deploy一键提交和发布。
-- [ ] 在线编辑器。可视化编辑和提交。更方便。
 - [ ] 头部导航栏样式

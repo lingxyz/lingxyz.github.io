@@ -22,6 +22,8 @@ export default defineUserConfig({
   theme: defaultTheme({
     // 仓库地址。用于生成编辑此页链接。
     repo: 'lingxyz/lingxyz.github.io',
+    // 文档源文件地址。这里使用Gitee编辑，配置Gitee自动同步到Github。
+    docsRepo: 'https://gitee.com/lingxyz/lingxyz.github.io',
 
     // 首页logo
     logo: '/images/photo.webp',
