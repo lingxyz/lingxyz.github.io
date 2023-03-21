@@ -20,6 +20,10 @@ export default defineUserConfig({
   ],
   // 默认theme配置：https://github.com/vuepress/vuepress-next/tree/main/packages/%40vuepress/theme-default
   theme: defaultTheme({
+    // 仓库地址。用于生成编辑此页链接。
+    repo: 'lingxyz/lingxyz.github.io',
+
+    // 首页logo
     logo: '/images/photo.webp',
 
     // 头部导航栏配置
@@ -31,35 +35,42 @@ export default defineUserConfig({
       {
         text: '产品',
         children: [
-          {text: '开源项目', link: ''},
-          {text: '商业项目', link: ''},
+          {text: '数字化', children: []},
+          {text: '新零售', children: []},
+          {text: '技术产品', children: []},
+          {
+            text: '小工具',
+            children: [
+              {text: '每日一练', link: '/review'},
+            ]
+          },
         ]
       },
       {
         text: '技术',
         children: [
-          {text: '产品架构体系', link: ''},
-          {text: '前端架构体系', link: ''},
-          {text: '后端架构体系', link: ''},
-          {text: '数据架构体系', link: ''},
+          {text: '通用', children: [{text: '《开发规范》', link: 'https://zhangling.site/standard/'}]},
+          {text: '前端', children: []},
+          {text: '后端', children: []},
+          {text: '大数据', children: []},
+          {text: '人工智能', children: []},
         ]
       },
       {
         text: '管理',
         children: [
-          {text: '产品', link: ''},
-          {text: '技术', link: ''},
-          {text: '管理', link: ''},
-          {text: '小说', link: ''},
+          {text: '团队管理', link: ''},
+          {text: '项目管理', link: ''},
+          {text: '技术管理', link: ''},
+          {text: '向上管理', link: ''},
         ]
       },
       {
         text: '概念',
         children: [
-          {text: '产品', link: ''},
-          {text: '技术', link: ''},
+          {text: '商业', link: ''},
+          {text: '世界格局', link: ''},
           {text: '管理', link: ''},
-          {text: '小说', link: ''},
         ]
       },
       {
