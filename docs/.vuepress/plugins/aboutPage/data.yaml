@@ -1,4 +1,3 @@
----
 layout: AboutLayout
 sidebar: false
 lastUpdated: false
@@ -24,5 +23,3 @@ experience:
   type: info
 - time: 2014年2月
   text: 自学前端
----
-<!-- todo: 做成简历，加密码 -->
