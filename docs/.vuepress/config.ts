@@ -14,6 +14,7 @@ export default defineUserConfig({
     ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_987629_b1cqvuf9roo.css' }]
   ],
   plugins: [
+    require('./plugins/homePage/index.ts'),
     require('./plugins/aboutPage/index.ts')
   ],
   // 默认theme配置：https://github.com/vuepress/vuepress-next/tree/main/packages/%40vuepress/theme-default
@@ -73,8 +74,8 @@ export default defineUserConfig({
       },
     ]
   }),
-  alias: {
-    // 组件覆盖：替换主页模块。文档：https://github.com/vuepress/vuepress-next/tree/main/ecosystem/theme-default/src/client/components
-    '@theme/HomeHero.vue': path.resolve(__dirname, './components/Home.vue'),
-  },
+  // alias: {
+  //   // 组件覆盖：替换主页模块。文档：https://github.com/vuepress/vuepress-next/tree/main/ecosystem/theme-default/src/client/components
+  //   '@theme/HomeHero.vue': path.resolve(__dirname, './components/Home.vue'),
+  // },
 })

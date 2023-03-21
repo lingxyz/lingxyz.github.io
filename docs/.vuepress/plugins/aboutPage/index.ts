@@ -5,7 +5,7 @@ import { createPage } from '@vuepress/core'
 import { getDirname, path } from '@vuepress/utils'
 import jsyaml from 'js-yaml'
 import  fs from  'fs';
-const aboutData = fs.readFileSync(path.resolve(__dirname, './data.yaml'), 'utf8')
+const aboutmeDB = fs.readFileSync(path.resolve(__dirname, './data.yaml'), 'utf8')
 
 const createAboutPage = (options, app) => {
   return {
@@ -14,12 +14,12 @@ const createAboutPage = (options, app) => {
       // if aboutpage doesn't exist
       if (app.pages.every((page) => page.path !== '/aboutme')) {
         // 页面数据准备
-        const aboutmeDB = jsyaml.load(aboutData)
+        const aboutData = jsyaml.load(aboutmeDB)
         // 创建一个关于页
         const aboutpage = await createPage(app, {
           path: '/aboutme',
           // 设置 frontmatter
-          frontmatter: aboutmeDB,
+          frontmatter: aboutData,
           // 设置 markdown 内容
           // content: ``
         })

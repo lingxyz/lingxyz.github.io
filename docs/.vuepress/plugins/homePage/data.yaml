@@ -1,5 +1,5 @@
----
-home: true
+layout: HomeLayout
+# home: true
 sidebar: false
 lastUpdated: false
 contributors: false
@@ -35,4 +35,3 @@ recommends:
 - title: '《Vue可视化开发》'
   link: 'https://github.com/cookx/vue-visual'
   background: '#f90'
----
