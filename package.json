@@ -5,8 +5,8 @@
   "author": "Zero <zhangling.me@foxmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
+    "dev": "vuepress dev .",
+    "build": "vuepress build .",
     "deploy": "./scripts/deploy.sh"
   },
   "devDependencies": {

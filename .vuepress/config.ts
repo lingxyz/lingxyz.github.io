@@ -14,6 +14,7 @@ export default defineUserConfig({
     ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_987629_b1cqvuf9roo.css' }]
   ],
   plugins: [
+    require('./plugins/docsPath/index.ts'),
     require('./plugins/homePage/index.ts'),
     require('./plugins/aboutPage/index.ts')
   ],
