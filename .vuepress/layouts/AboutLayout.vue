@@ -1,19 +1,19 @@
 <template>
   <ParentLayout>
     <template #page-top>
-      <Timeline />
+      <About />
     </template>
   </ParentLayout>
 </template>
 
 <script>
 import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue'
-import Timeline from '../components/Timeline.vue'
+import About from '../components/About.vue'
 
 export default {
   components: {
     ParentLayout,
-    Timeline
+    About
   },
 }
 </script>

@@ -1,5 +1,5 @@
 /**
- * 网站首页
+ * Home 首页
  */
 <template lang="pug">
 .container

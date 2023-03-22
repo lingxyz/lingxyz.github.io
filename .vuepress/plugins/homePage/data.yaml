@@ -20,7 +20,7 @@ menus:
 - title: Code
   link: https://github.com/lingxyz
 - title: About me
-  # link: /aboutme
+  link: /aboutme
 # 推荐列表
 recommends:
 - title: '《开发规范》'
