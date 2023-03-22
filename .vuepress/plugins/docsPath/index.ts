@@ -3,10 +3,9 @@
 const removeDocsPath = (options, app) => {
   return {
     name: 'vuepress-plugin-removeDocsPath',
-    async onInitialized(app) {
-      app.pages.forEach(page => {
-        page.path = page.path.replace(/\/docs/, '')
-      })
+    // docs: https://vuepress.github.io/zh/reference/plugin-api.html#extendspage
+    async extendsPage(page) {
+      page.path = page.data.path = page.path.replace(/\/docs/, '')
     },
   }
 }

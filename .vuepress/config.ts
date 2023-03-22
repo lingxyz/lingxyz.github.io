@@ -51,7 +51,7 @@ export default defineUserConfig({
       {
         text: '技术',
         children: [
-          {text: '通用', children: [{text: '《开发规范》', link: 'https://zhangling.site/standard/'}]},
+          {text: '通用', children: [{text: '《开发规范》✨', link: 'https://zhangling.site/standard/'}]},
           {text: '前端', children: []},
           {text: '后端', children: []},
           {text: '大数据', children: []},
@@ -61,25 +61,30 @@ export default defineUserConfig({
       {
         text: '管理',
         children: [
-          {text: '团队管理', link: ''},
-          {text: '项目管理', link: ''},
-          {text: '技术管理', link: ''},
-          {text: '向上管理', link: ''},
+          {text: '团队管理', children: []},
+          {text: '项目管理', children: []},
+          {text: '技术管理', children: []},
+          {text: '向上管理', children: []},
         ]
       },
       {
         text: '概念',
         children: [
-          {text: '商业', link: ''},
-          {text: '世界格局', link: ''},
-          {text: '管理', link: ''},
+          {text: '商业', children: []},
+          {text: '世界格局', children: []},
+          {text: '管理', children: []},
         ]
       },
       {
         text: '阅读',
         children: [
-          {text: '精读笔记-书文', link: 'https://zhangling.site/read/'},
-          {text: '精读笔记-源码', link: ''},
+          {text: '产品相关', children: [
+            {text: '《Lean UX》Jeff Gothelf', link: 'https://zhangling.site/read/LeanUX/'}
+          ]},
+          {text: '技术相关', children: [
+            {text: '《架构整洁之道》Robert C. Martin', link: 'https://zhangling.site/read/cleancoder/'}
+          ]},
+          {text: '源码相关', children: []},
         ]
       },
       {
