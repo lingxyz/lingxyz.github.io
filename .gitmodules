@@ -1,0 +1,3 @@
+[submodule "docs/standard"]
+	path = docs/standard
+	url = https://github.com/lingxyz/standard.git

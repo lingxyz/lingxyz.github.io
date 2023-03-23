@@ -5,9 +5,9 @@
   "author": "Zero <zhangling.me@foxmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev .",
-    "build": "vuepress build .",
-    "deploy": "./scripts/deploy.sh"
+    "dev": "./scripts/pull.sh && vuepress dev .",
+    "build": "./scripts/pull.sh && vuepress build .",
+    "deploy": "./scripts/pull.sh && ./scripts/deploy.sh"
   },
   "devDependencies": {
     "pug": "^3.0.2",
