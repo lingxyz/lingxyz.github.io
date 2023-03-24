@@ -38,37 +38,22 @@
         :style="'background: ' + item.background") {{item.title}}
 </template>
 
-<script>
+<script lang="ts" setup>
+import { defineComponent, ref, onMounted } from 'vue'
 import { usePageFrontmatter } from '@vuepress/client'
 
-export default {
-  setup() {
-    // 读取md中yml配置
-    const frontmatter = usePageFrontmatter()
-    return {
-      frontmatter
-    }
-  },
+const frontmatter = usePageFrontmatter()
+const menusAnimateClass = ref('fadeInDown')
 
-  data: () => ({
-    // 菜单动画
-    menusAnimateClass: "fadeInDown",
-  }),
-
-  mounted () {
-    this.bounce()
-  },
-
-  methods: {
-    // menu 跳动动画
-    bounce () {
-      setInterval(() => {
-        this.menusAnimateClass = this.menusAnimateClass ? '' : 'bounce'
-      }, 3000)
-    }
-  }
-
+const bounce = () => {
+  setInterval(() => {
+    menusAnimateClass.value = menusAnimateClass.value ? '' : 'bounce'
+  }, 3000)
 }
+
+onMounted(() => {
+  bounce()
+})
 </script>
 
 <style lang="stylus" scoped>
