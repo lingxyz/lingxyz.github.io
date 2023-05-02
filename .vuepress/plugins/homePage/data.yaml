@@ -5,7 +5,7 @@ lastUpdated: false
 contributors: false
 # 主页 基本信息
 info:
-  description: Ling Z, a Code Designer.
+  description: Zero, a software Architect.
 # 菜单列表
 menus:
 - title: Blog
@@ -25,13 +25,13 @@ menus:
 recommends:
 - title: '《开发规范》'
   link: 'https://zhangling.site/standard/'
-  background: '#fbf94e'
+  background: '#fbf94ed4'
 - title: 《技术问答题》
   link: https://ask.zhangling.site/
-  background: '#1672b7'
+  background: '#1672b780'
 - title: 《Cook脚手架》
   link: https://github.com/CookX/cook-cli
-  background: '#ef5c55'
+  background: '#ef5c55b3'
 - title: '《Vue可视化开发》'
   link: 'https://github.com/cookx/vue-visual'
-  background: '#f90'
+  background: '#6bed0399'

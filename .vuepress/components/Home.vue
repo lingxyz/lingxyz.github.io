@@ -160,14 +160,18 @@ a
     background #eee
     padding .2rem .4rem
   a
-    display inline-block
     text-decoration none
     color #000
     width 10rem
-    height 4rem
-    line-height 4rem
+    min-height 4rem
+    max-height 8rem
+    padding .5rem 0
+    box-sizing border-box
+    display flex
+    align-items center
+    justify-content center
     background #fff
     margin 0 .2rem
     background #f5f5f5
+    overflow hidden
 </style>
-s
