@@ -14,6 +14,7 @@ const createLogInPage = (options, app) => {
           // 设置 frontmatter
           frontmatter: {
             layout: 'LoginLayout',
+            sidebar: false,
           },
         })
         // 把它添加到 `app.pages`

@@ -19,6 +19,7 @@ export default defineUserConfig({
     require('./plugins/homePage/index.ts'),
     require('./plugins/aboutPage/index.ts'),
     require('./plugins/loginPage/index.ts'),
+    require('./plugins/adminPage/index.ts'),
     searchPlugin({
     }),
   ],
@@ -94,9 +95,6 @@ export default defineUserConfig({
       {
         text: '导航',
         link: '/guide/',
-      },{
-        text: '登录',
-        link: '/login/',
       },
     ]
   }),

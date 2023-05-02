@@ -1,3 +1,6 @@
+/**
+ * 关于页
+ */
 <template>
   <ParentLayout>
     <template #page-top>

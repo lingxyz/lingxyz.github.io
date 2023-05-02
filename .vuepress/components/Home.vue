@@ -36,6 +36,10 @@
         v-for="(item, index) in frontmatter.recommends"
         :href="item.link"
         :style="'background: ' + item.background") {{item.title}}
+
+    //- login
+    .login.animated.fadeInUp(style="animation-delay: 3.2s;")
+      router-link(to="/login") Log in
 </template>
 
 <script lang="ts" setup>
@@ -172,4 +176,12 @@ a
     margin 0 .2rem
     background #f5f5f5
     overflow hidden
+
+// login
+.login
+  margin 16rem auto -14rem
+  display flex
+  justify-content center
+  a
+    color #3ac2a1b8
 </style>

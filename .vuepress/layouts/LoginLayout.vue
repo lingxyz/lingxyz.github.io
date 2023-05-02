@@ -1,3 +1,6 @@
+/**
+ * 登录页
+ */
 <template lang="pug">
 ParentLayout
   template(#page-top)
@@ -32,7 +35,9 @@ const confirmHandler = () => {
 <style lang="stylus" scoped>
 .el-form
   width 300px
-  margin 50% auto 0
+  margin 0 auto
+  padding-top 50%
+  transform translateY(-50%)
 .el-button
   width 100%
   margin-top 20px
