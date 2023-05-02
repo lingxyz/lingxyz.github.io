@@ -23,15 +23,15 @@ menus:
   link: /aboutme
 # 推荐列表
 recommends:
-- title: '《开发规范》'
-  link: 'https://zhangling.site/standard/'
+- title: 开发规范
+  link: https://zhangling.site/standard/
   background: '#fbf94ed4'
-- title: 《技术问答题》
-  link: https://ask.zhangling.site/
-  background: '#1672b780'
-- title: 《Cook脚手架》
-  link: https://github.com/CookX/cook-cli
+- title: 框架模板
+  link: https://zhangling.site/templates/
   background: '#ef5c55b3'
-- title: '《Vue可视化开发》'
-  link: 'https://github.com/cookx/vue-visual'
+- title: 物料市场
+  link:
+  background: '#1672b780'
+- title: 低代码平台
+  link:
   background: '#6bed0399'

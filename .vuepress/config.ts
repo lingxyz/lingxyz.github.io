@@ -1,5 +1,6 @@
 import { getDirname, path } from '@vuepress/utils'
 import { defaultTheme, defineUserConfig } from 'vuepress'
+import { searchPlugin } from '@vuepress/plugin-search'
 
 const __dirname = getDirname(import.meta.url)
 
@@ -16,7 +17,9 @@ export default defineUserConfig({
   plugins: [
     require('./plugins/docsPath/index.ts'),
     require('./plugins/homePage/index.ts'),
-    require('./plugins/aboutPage/index.ts')
+    require('./plugins/aboutPage/index.ts'),
+    searchPlugin({
+    }),
   ],
   // 默认theme配置：https://github.com/vuepress/vuepress-next/tree/main/packages/%40vuepress/theme-default
   theme: defaultTheme({
@@ -90,6 +93,9 @@ export default defineUserConfig({
       {
         text: '导航',
         link: '/guide/',
+      },{
+        text: '登录',
+        link: '/login/',
       },
     ]
   }),

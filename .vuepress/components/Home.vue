@@ -147,9 +147,7 @@ a
   margin 2rem auto -8rem
   display flex
   align-items center
-  // background rgba(247,245,245,0.6)
   width 80%
-  // padding .6rem
   position relative
   &:before
     content '推荐'
