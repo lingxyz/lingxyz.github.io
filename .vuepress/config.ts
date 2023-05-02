@@ -18,6 +18,7 @@ export default defineUserConfig({
     require('./plugins/docsPath/index.ts'),
     require('./plugins/homePage/index.ts'),
     require('./plugins/aboutPage/index.ts'),
+    require('./plugins/loginPage/index.ts'),
     searchPlugin({
     }),
   ],
