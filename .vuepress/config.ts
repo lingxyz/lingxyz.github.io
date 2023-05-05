@@ -56,7 +56,10 @@ export default defineUserConfig({
       {
         text: '技术',
         children: [
-          {text: '通用', children: [{text: '《开发规范》✨', link: 'https://zhangling.site/standard/'}]},
+          {text: '通用', children: [
+            {text: '《开发规范》✨', link: 'https://zhangling.site/standard/'},
+            {text: '《技术文档》', link: 'https://zhangling.site/learning/'},
+          ]},
           {text: '前端', children: []},
           {text: '后端', children: []},
           {text: '大数据', children: []},
