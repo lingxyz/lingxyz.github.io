@@ -58,10 +58,15 @@ export default defineUserConfig({
         children: [
           {text: '通用', children: [
             {text: '《开发规范》✨', link: 'https://zhangling.site/standard/'},
-            {text: '《技术文档》', link: 'https://zhangling.site/learning/'},
           ]},
-          {text: '前端', children: []},
-          {text: '后端', children: []},
+          {text: '前端', children: [
+            {text: 'Web前端', link: 'https://zhangling.site/learning/#/web/'},
+            {text: '微信开发', link: 'https://zhangling.site/learning/#/wechat/'},
+            {text: 'App开发', link: 'https://zhangling.site/learning/#/app/'},
+          ]},
+          {text: '后端', children: [
+            {text: 'Java后端', link: 'https://zhangling.site/learning/#/java/'},
+          ]},
           {text: '大数据', children: []},
           {text: '人工智能', children: []},
         ]
@@ -85,15 +90,7 @@ export default defineUserConfig({
       },
       {
         text: '阅读',
-        children: [
-          {text: '产品相关', children: [
-            {text: '《Lean UX》Jeff Gothelf', link: 'https://zhangling.site/read/LeanUX/'}
-          ]},
-          {text: '技术相关', children: [
-            {text: '《架构整洁之道》Robert C. Martin', link: 'https://zhangling.site/read/cleancoder/'}
-          ]},
-          {text: '源码相关', children: []},
-        ]
+        link: 'https://zhangling.site/learning/#/read/lean-ux',
       },
       {
         text: '导航',
