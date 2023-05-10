@@ -9,7 +9,7 @@ export default defineUserConfig({
   title: 'Zero‘s Website 🙃',
   description: '知识总结，职场经验，人生感悟',
   head: [
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/assets/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/images/favicon.ico' }],
     ['link', { rel: 'stylesheet', href: '//cdn.bootcss.com/normalize/7.0.0/normalize.min.css' }],
     ['link', { rel: 'stylesheet', href: '//cdn.bootcss.com/animate.css/3.5.2/animate.min.css' }],
     ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_987629_b1cqvuf9roo.css' }]
