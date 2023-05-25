@@ -90,7 +90,7 @@ export default defineUserConfig({
       },
       {
         text: '阅读',
-        link: 'https://zhangling.site/learning/#/read/lean-ux',
+        link: 'https://zhangling.site/books/',
       },
       {
         text: '导航',
