@@ -39,7 +39,7 @@
 
     //- login
     .login.animated.fadeInUp(style="animation-delay: 3.2s;")
-      router-link(to="/login") Log in
+      router-link(to="/login") 开始创作
 </template>
 
 <script lang="ts" setup>
